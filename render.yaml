@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: elevenmusic
+    runtime: python
+    buildCommand: pip install -U -r requirements.txt
+    startCommand: python -m Elevenyts
+    plan: free
